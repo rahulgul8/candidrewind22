@@ -1,8 +1,33 @@
 .block {
       background: #eee;
-      float: left;
       width: 80px;
       height: 80px;
       border-radius: 50%;
       margin: 5px;
+      display: inline-block;
     }
+
+    img{
+      width: 100%;
+    }
+
+.carousel{
+    
+}
+.album{
+  margin: 5% auto;
+  text-align: center;
+}
+
+.album-item{
+  width: 85%;
+  margin: 1% auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .album-item {
+   width: 31%;
+   display: inline-block;
+   margin: 1% 1%;
+  }
+}

@@ -13,15 +13,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent,MenuComponent, CenterMenuComponent, HomeComponent, ContactUsComponent, GalleryComponent
+    AppComponent, MenuComponent, CenterMenuComponent, HomeComponent, ContactUsComponent, GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule, BrowserAnimationsModule
+    MaterialModule, BrowserAnimationsModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
