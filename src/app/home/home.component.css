@@ -7,9 +7,6 @@
       display: inline-block;
     }
 
-    img{
-      width: 100%;
-    }
 
 .carousel{
     
@@ -19,6 +16,9 @@
   text-align: center;
 }
 
+.album-img{
+  width: 100%;
+}
 .album-item{
   width: 85%;
   margin: 1% auto;
