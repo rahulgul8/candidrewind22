@@ -7,18 +7,31 @@
       display: inline-block;
     }
 
-
+img{
+  width: 100%;
+  max-height: 50em;
+}
 .carousel{
-    
+    height: 100%;
+    width: 100%;
+}
+
+#intro{
+  background: rgb(155, 155, 155,0.5);
+  margin: 1em auto;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+#intro p{
+  max-width: 20em;
+  margin: auto;
 }
 .album{
   margin: 5% auto;
   text-align: center;
 }
 
-.album-img{
-  width: 100%;
-}
 .album-item{
   width: 85%;
   margin: 1% auto;

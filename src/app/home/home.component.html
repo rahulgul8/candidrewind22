@@ -1,13 +1,19 @@
-<ngb-carousel *ngIf="images">
-	<ng-template ngbSlide *ngFor="let i of images">
-		<img [src]="i" alt="Random first slide">
+<section id="carousel">
+	<div class="carousel">
+		<ngb-carousel *ngIf="images">
+			<ng-template ngbSlide *ngFor="let i of images">
+				<img [src]="i" alt="Random first slide">
       <div class="carousel-caption">
         <h3>First slide label</h3>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </ng-template>
   </ngb-carousel>
-<section></section>
+  </div>
+</section>
+<section>
+  <div id="intro"><p>A picture is worth thousand words they say, but we feel wedding photographs are more than that. For the amount of love, joy, promise, dreams and memories they carry within, it is an endless journey of emotions that the couple gets to experience on the big day.we make sure not a moment is missed when you are in the flow of the occasion.</p></div>
+</section>
 <section id="albums" class="album">
   <div class="album-item" *ngFor="let a of albums">
     <img class="album-img" [src]="a">
