@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, stagger, animate, style, group, query as q, transition, keyframes } from '@angular/animations';
-const query = (s, a, o = { optional: true }) => q(s, a, o);
+import { trigger, stagger, animate, style, group, query, transition, keyframes } from '@angular/animations';
+
 
 export const homeTransition = trigger('homeTransition', [
   transition(':enter', [

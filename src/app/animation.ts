@@ -1,5 +1,4 @@
-import { sequence, trigger, stagger, animate, style, group, query as q, transition, keyframes, animateChild } from '@angular/animations';
-const query = (s, a, o = { optional: true }) => q(s, a, o);
+import { sequence, trigger, stagger, animate, style, group, query, transition, keyframes, animateChild } from '@angular/animations';
 
 export const routerTransition = trigger('routerTransition', [
   transition('* => *', [

@@ -36,22 +36,26 @@ img{
 #intro div{
   display: inline;
 }
+$buttonClr:rgba(0, 0, 36, 0.8);
 
 #intro a{
   padding: 1em;
   margin: 1em;
-  background: rgba(0, 0, 36, 0.8);
+  background: $buttonClr;
   border: 1px solid white;
   color: white;
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 
+
+
 #intro a:hover{
 background: white;
-color: rgba(0, 0, 36, 0.8);
+color: $buttonClr;
 transition: ease-in-out 0.2s;
 text-decoration: none;
+border: 1px solid $buttonClr;
 }
 
 .introStudioLamp{
