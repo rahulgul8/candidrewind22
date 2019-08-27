@@ -23,6 +23,38 @@ img{
   padding: 3em 1em;
 }
 
+#intro p, #intro img{
+  display: inline-block;
+}
+
+#intro div{
+  display: inline;
+}
+
+#intro a{
+  padding: 1em;
+  margin: 1em;
+  background: rgba(0, 0, 36, 0.8);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.6s;
+}
+
+#intro a:hover{
+background: white;
+color: rgba(0, 0, 36, 0.8);
+transition: ease-in-out 0.3s;
+}
+
+.introStudioLamp{
+  height: 10em;
+  width: 5em;
+  margin-left: 3em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
 #intro p{
   max-width: 60%;
   margin: auto;
