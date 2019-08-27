@@ -1,0 +1,17 @@
+<nav mat-tab-nav-bar dynamicHeight mat-align-tabs="center" animationDuration="500ms">
+	<a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+		{{link.label}}
+	</a>
+</nav>
+
+
+<!--<mat-tab-group dynamicHeight mat-align-tabs="center" animationDuration="500ms">
+	<mat-tab *ngFor="let link of navLinks" [label]="link.label" [routerLink]="link.path">
+		<div class="mat-elevation-z4">
+			About Us
+		</div>
+	</mat-tab>
+</mat-tab-group>-->
+<div class="container" [@routerTransition]="getState(o)">
+	<router-outlet #o="outlet"></router-outlet>
+</div>
