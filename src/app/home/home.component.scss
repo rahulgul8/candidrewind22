@@ -40,7 +40,7 @@ img{
 }
 
 
-#intro a{
+.anchorButton{
   padding: 1em;
   margin: 1em;
   background: $buttonClr;
@@ -53,7 +53,7 @@ img{
 
 
 
-#intro a:hover{
+.anchorButton:hover{
 background: white;
 color: $buttonClr;
 transition: ease-in-out 0.2s;
@@ -114,6 +114,7 @@ border: 1px solid $buttonClr;
   border : 1px solid rgba(0, 0, 0,0); 
   overflow:hidden;
   text-align: center;
+  background: $backgroundClr;
 }
 
 .wrapper div {
@@ -129,6 +130,10 @@ border: 1px solid $buttonClr;
   overflow:hidden;
   margin:10px;
   min-height:170px;
+}
+
+#two p{
+  margin-bottom: em;
 }
 
 
