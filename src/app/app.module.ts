@@ -14,15 +14,16 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
-    AppComponent, MenuComponent, CenterMenuComponent, HomeComponent, ContactUsComponent, GalleryComponent
+    AppComponent, MenuComponent, CenterMenuComponent, HomeComponent, ContactUsComponent, GalleryComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule, BrowserAnimationsModule, NgbModule
+    MaterialModule, BrowserAnimationsModule, NgbModule,FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
