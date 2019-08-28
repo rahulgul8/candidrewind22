@@ -6,6 +6,8 @@
       margin: 5px;
       display: inline-block;
     }
+$buttonClr:rgba(0, 0, 36, 0.8);
+$backgroundClr:rgba(104, 103, 103, 0.5);
 
 img{
   width: 100%;
@@ -36,9 +38,9 @@ img{
 #intro div{
   display: inline;
 }
-$buttonClr:rgba(0, 0, 36, 0.8);
 
-#intro a{
+
+.anchorButton{
   padding: 1em;
   margin: 1em;
   background: $buttonClr;
@@ -46,11 +48,12 @@ $buttonClr:rgba(0, 0, 36, 0.8);
   color: white;
   cursor: pointer;
   transition: ease-in-out 0.2s;
+  // box-shadow: 0px 8px 15px rgba(252, 250, 250, 1);
 }
 
 
 
-#intro a:hover{
+.anchorButton:hover{
 background: white;
 color: $buttonClr;
 transition: ease-in-out 0.2s;
@@ -104,5 +107,49 @@ border: 1px solid $buttonClr;
    width: 31%;
    display: inline-block;
    margin: 1% 1%;
+  }
+}
+
+.wrapper { 
+  border : 1px solid rgba(0, 0, 0,0); 
+  overflow:hidden;
+  text-align: center;
+  background: $backgroundClr;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  float:left; 
+  margin-right:20px;
+  width:50%;
+}
+#two { 
+  overflow:hidden;
+  margin:10px;
+  min-height:170px;
+}
+
+#two p{
+  margin-bottom: 3em;
+}
+
+
+iframe{
+  width: 45vw;
+  height: 25.2vw;
+}
+
+@media screen and (max-width: 600px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+  }
+  iframe{
+  width: 90vw;
+  height: 50.4vw;
   }
 }

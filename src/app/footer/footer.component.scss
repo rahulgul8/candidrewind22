@@ -6,8 +6,12 @@
 
 i{
     margin: 1em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
-.followUs{
+@media screen and (max-width: 600px){
+  i{
+    margin: 0.4em;
+    font-size: 1.5em;
+  }
 }
