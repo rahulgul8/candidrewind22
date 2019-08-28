@@ -1,0 +1,21 @@
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 0px 16px;
+  background: rgba(85, 85, 85,0.7);
+  color: #f1f1f1;
+  z-index: 100;
+  transition: ease-in 1s;
+  position: sticky;
+  top: 0px
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}

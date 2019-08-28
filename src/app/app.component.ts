@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { routerTransition } from './animation'
 
 @Component({
@@ -11,6 +11,7 @@ import { routerTransition } from './animation'
   ]
 })
 export class AppComponent {
+
   title = 'candidRewind';
 
   navLinks: any[] = [{ path: "contactus", label: "Contact us" }, { path: "home", label: "Home" }, { path: "gallery", label: "Gallery" }];
