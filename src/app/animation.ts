@@ -28,14 +28,14 @@ export const floatIn = trigger('floatIn', [
     query('section', style({ opacity: 0 }), { optional: true }),
     query('section', stagger(300, [
       style({ transform: 'translateY(200px)' }),
-      animate('1s cubic-bezier(.75,-0.48,.26,1.52)', style({ transform: 'translateY(0px)', opacity: 1 })),
+      animate('0.3s cubic-bezier(.75,-0.48,.26,1.52)', style({ transform: 'translateY(0px)', opacity: 1 })),
     ]), { optional: true }),
   ])
-  // ,
-  // transition(':leave', [
-  //   query('section', stagger(300, [
-  //     style({ transform: 'translateY(0px)', opacity: 1 }),
-  //     animate('1s cubic-bezier(.75,-0.48,.26,1.52)', style({ transform: 'translateY(100px)', opacity: 0 })),
-  //   ]), { optional: true }),
-  // ])
+  ,
+  transition(':leave', [
+    query('section', stagger(300, [
+      style({ transform: 'translateY(0px)', opacity: 1 }),
+      animate('0.3s cubic-bezier(.75,-0.48,.26,1.52)', style({ transform: 'translateY(100px)', opacity: 0 })),
+    ]), { optional: true }),
+  ])
 ]);
