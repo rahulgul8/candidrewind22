@@ -1,4 +1,4 @@
-import { sequence, trigger, stagger, animate, style, group, query, transition, keyframes, animateChild } from '@angular/animations';
+import { sequence, trigger, stagger, animate, style, group, query, transition, keyframes, animateChild, state } from '@angular/animations';
 
 export const routerTransition = trigger('routerTransition', [
   transition('* => *', [
@@ -38,4 +38,11 @@ export const floatIn = trigger('floatIn', [
       animate('0.3s cubic-bezier(.75,-0.48,.26,1.52)', style({ transform: 'translateY(100px)', opacity: 0 })),
     ]), { optional: true }),
   ])
+]);
+
+
+export const changeScreen = trigger('changeScreen', [
+  transition('*<=>*', [
+    style({ backgroundImage: 'linear-gradient(to left,transparent,transparent 50%,#790c0c 50%, #9b09091a)', backgroundPosition: '100% 0', backgroundSize: '200% 100%' }),
+    animate('1s ease-out', style({ backgroundPosition: '-70% 0' }))])
 ]);
