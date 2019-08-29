@@ -6,6 +6,11 @@
       margin: 5px;
       display: inline-block;
     }
+
+    mat-card{
+      margin: 1em;
+      padding: 0.5em;
+    }
 $buttonClr:rgba(0, 0, 36, 0.8);
 $backgroundClr:rgba(104, 103, 103, 0.5);
 
@@ -28,7 +33,7 @@ img{
 }
 
 #intro:hover{
-  background: rgba(104, 103, 103,1);
+  background: rgb(139, 1, 1);
   transition: ease-in-out 0.5s;
 }
 #intro p, #intro img{
