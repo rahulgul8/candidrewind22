@@ -107,13 +107,7 @@ border: 1px solid $buttonClr;
    transition: all .2s ease-in-out;
 }
 
-@media only screen and (min-width: 600px) {
-  .album-item {
-   width: 31%;
-   display: inline-block;
-   margin: 1% 1%;
-  }
-}
+
 
 .wrapper { 
   border : 1px solid rgba(0, 0, 0,0); 
@@ -146,8 +140,19 @@ iframe{
   width: 45vw;
   height: 25.2vw;
 }
+@media only screen and (min-width: 800px) {
+  .album-item {
+   width: 31%;
+   display: inline-block;
+  }
+  
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+   #intro p{
+  max-width: 95%;
+  margin: auto;
+}
    #one { 
     float: none;
     margin-right:0;
@@ -157,4 +162,7 @@ iframe{
   width: 90vw;
   height: 50.4vw;
   }
+    mat-card{
+      margin: 0.5em;
+    }
 }
